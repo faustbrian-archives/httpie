@@ -2,40 +2,35 @@ export interface IResponse {
 	/**
 	 * Retrieves the HTTP protocol version as a string.
 	 */
-	getProtocolVersion();
+	getProtocolVersion(): string;
 
 	/**
 	 * Retrieves all message header values.
 	 */
-	getHeaders();
+	getHeaders(): Record<string, any>;
 
 	/**
 	 * Checks if a header exists by the given case-insensitive name.
 	 */
-	hasHeader(name: string);
+	hasHeader(name: string): boolean;
 
 	/**
 	 * Retrieves a message header value by the given case-insensitive name.
 	 */
-	getHeader(name: string);
-
-	/**
-	 * Retrieves a comma-separated string of the values for a single header.
-	 */
-	getHeaderLine(name: string);
+	getHeader<T>(name: string): T;
 
 	/**
 	 * Gets the body of the message.
 	 */
-	getBody();
+	getBody(): string;
 
 	/**
 	 * Gets the response status code.
 	 */
-	getStatusCode();
+	getStatusCode(): number;
 
 	/**
 	 * Gets the response reason phrase associated with the status code.
 	 */
-	getReasonPhrase();
+	getReasonPhrase(): string;
 }

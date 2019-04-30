@@ -4,22 +4,22 @@ export interface IRequest {
 	/**
 	 * Retrieves the HTTP method of the request.
 	 */
-	getMethod();
+	getMethod(): string;
 
 	/**
 	 * Return an instance with the provided HTTP method.
 	 */
-	withMethod(method: string);
+	withMethod(method: string): IRequest;
 
 	/**
 	 * Retrieves the URI instance.
 	 */
-	getUri();
+	getUri(): string;
 
 	/**
 	 * Returns an instance with the provided URI.
 	 */
-	withUri(uri: URL);
+	withUri(uri: URL): IRequest;
 }
 
 export interface IRequestError extends Error {
