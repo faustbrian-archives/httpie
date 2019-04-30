@@ -1,4 +1,4 @@
-import { URL } from "url";
+import { URL, URLSearchParams } from "url";
 
 export interface IRequest {
 	/**
@@ -12,14 +12,24 @@ export interface IRequest {
 	withMethod(method: string): IRequest;
 
 	/**
-	 * Retrieves the URI instance.
+	 * Retrieves the URL instance.
 	 */
 	getUri(): string;
 
 	/**
-	 * Returns an instance with the provided URI.
+	 * Returns an instance with the provided URL.
 	 */
 	withUri(uri: URL): IRequest;
+
+	/**
+	 * Retrieves the URL query.
+	 */
+	getQuery(): URLSearchParams;
+
+	/**
+	 * Returns an instance with the provided URL query.
+	 */
+	withQuery(query: URLSearchParams): IRequest;
 }
 
 export interface IRequestError extends Error {
