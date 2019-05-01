@@ -1,10 +1,11 @@
-import { URL, URLSearchParams } from "url";
+import { URL } from "url";
+import { RequestOptions } from "./types";
 
 export interface IRequest {
 	/**
 	 * Retrieves the HTTP method of the request.
 	 */
-	getMethod(): string;
+	getMethod(): string | undefined;
 
 	/**
 	 * Return an instance with the provided HTTP method.
@@ -14,22 +15,22 @@ export interface IRequest {
 	/**
 	 * Retrieves the URL instance.
 	 */
-	getUri(): string;
+	getUrl(): URL | undefined;
 
 	/**
 	 * Returns an instance with the provided URL.
 	 */
-	withUri(uri: URL): IRequest;
+	withUrl(url: URL): IRequest;
 
 	/**
-	 * Retrieves the URL query.
+	 * Retrieves the options of the request.
 	 */
-	getQuery(): URLSearchParams;
+	getOptions(): RequestOptions | undefined;
 
 	/**
-	 * Returns an instance with the provided URL query.
+	 * Returns an instance with the provided options.
 	 */
-	withQuery(query: URLSearchParams): IRequest;
+	withOptions(options: RequestOptions): IRequest;
 }
 
 export interface IRequestError extends Error {
