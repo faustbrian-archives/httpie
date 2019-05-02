@@ -127,6 +127,14 @@ export class Gotcha implements IClient {
 		return this.sendRequest(GotchaRequest.create("delete", url, options));
 	}
 
+	// @ts-ignore
+	public async options(url: string, options: RequestOptions = {}): Promise<IResponse> {
+		return new GotchaResponse()
+			.withStatus(200)
+			.withHeaders({})
+			.withBody("{}");
+	}
+
 	public async sendRequest(request: IRequest): Promise<IResponse> {
 		// @ts-ignore
 		const { body, headers, statusCode } = await got[request.getMethod()](request.getUrl(), request.getOptions());

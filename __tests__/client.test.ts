@@ -50,3 +50,11 @@ test("should send a DELETE request", async () => {
 	expect(response.getRawBody()).not.toBeEmpty();
 	expect(response.getBody()).toBeObject();
 });
+
+test("should send a OPTIONS request", async () => {
+	const response: IResponse = await client.options("https://httpbin.org/options");
+
+	expect(response.getStatusCode()).toBe(200);
+	expect(response.getRawBody()).not.toBeEmpty();
+	expect(response.getBody()).toBeObject();
+});
