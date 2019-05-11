@@ -1,17 +1,17 @@
-# common-http-client
+# @httpack/httpack
 
 > A common interface for reusable HTTP Client implementations in TypeScript.
 
-[![Latest Version](https://badgen.now.sh/npm/v/@faustbrian/common-http-client)](https://www.npmjs.com/package/@faustbrian/common-http-client)
-[![Node Engine](https://badgen.now.sh/npm/node/@faustbrian/common-http-client)](https://www.npmjs.com/package/@faustbrian/common-http-client)
-[![Build Status](https://badgen.now.sh/circleci/github/faustbrian/common-http-client)](https://circleci.com/gh/faustbrian/common-http-client)
-[![Codecov](https://badgen.now.sh/codecov/c/github/faustbrian/common-http-client)](https://codecov.io/gh/faustbrian/common-http-client)
+[![Latest Version](https://badgen.now.sh/npm/v/@httpack/httpack)](https://www.npmjs.com/package/@httpack/httpack)
+[![Node Engine](https://badgen.now.sh/npm/node/@httpack/httpack)](https://www.npmjs.com/package/@httpack/httpack)
+[![Build Status](https://badgen.now.sh/circleci/github/@httpack/httpack)](https://circleci.com/gh/@httpack/httpack)
+[![Codecov](https://badgen.now.sh/codecov/c/github/@httpack/httpack)](https://codecov.io/gh/@httpack/httpack)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
 ```bash
-yarn add @faustbrian/common-http-client
+yarn add @httpack/httpack
 ```
 
 ## Testing

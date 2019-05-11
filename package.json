@@ -1,14 +1,14 @@
 {
-	"name": "@faustbrian/common-http-client",
+	"name": "@httpack/httpack",
 	"version": "0.1.0",
 	"description": "A common interface for reusable HTTP Client implementations in TypeScript.",
-	"homepage": "https://github.com/faustbrian/common-http-client",
+	"homepage": "https://github.com/httpack/httpack",
 	"bugs": {
-		"url": "https://github.com/faustbrian/common-http-client/issues"
+		"url": "https://github.com/httpack/httpack/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:faustbrian/common-http-client.git"
+		"url": "git@github.com:httpack/httpack.git"
 	},
 	"license": "MIT",
 	"author": "Brian Faust <hello@basecode.sh>",
