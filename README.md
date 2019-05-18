@@ -1,6 +1,6 @@
 # @httpack/httpack
 
-> A common interface for reusable HTTP Client implementations in TypeScript.
+> A framework agnostic way of building HTTP Clients for TypeScript.
 
 [![Latest Version](https://badgen.now.sh/npm/v/@httpack/httpack)](https://www.npmjs.com/package/@httpack/httpack)
 [![Node Engine](https://badgen.now.sh/npm/node/@httpack/httpack)](https://www.npmjs.com/package/@httpack/httpack)
