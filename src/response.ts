@@ -1,36 +1,28 @@
+import { Primitive } from "type-fest";
+
 export interface IResponse {
-	/**
-	 * Retrieves the HTTP protocol version as a string.
-	 */
-	getProtocolVersion(): string;
-
-	/**
-	 * Retrieves all message header values.
-	 */
-	getHeaders(): Record<string, any>;
-
-	/**
-	 * Checks if a header exists by the given case-insensitive name.
-	 */
-	hasHeader(name: string): boolean;
-
-	/**
-	 * Retrieves a message header value by the given case-insensitive name.
-	 */
-	getHeader<T>(name: string): T;
-
 	/**
 	 * Gets the body of the message.
 	 */
-	getBody(): string;
+	getBody(): string | undefined;
 
 	/**
 	 * Gets the response status code.
 	 */
-	getStatusCode(): number;
+	getStatusCode(): number | undefined;
 
 	/**
-	 * Gets the response reason phrase associated with the status code.
+	 * Gets the response status message associated with the status code.
 	 */
-	getReasonPhrase(): string;
+	getStatusMessage(): string | undefined;
+
+	/**
+	 * Retrieves all message header values.
+	 */
+	getHeaders(): Record<string, Primitive>;
+
+	/**
+	 * Retrieves a message header value by the given case-insensitive name.
+	 */
+	getHeader(name: string): Primitive | undefined;
 }

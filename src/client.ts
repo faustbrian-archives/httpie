@@ -6,35 +6,35 @@ export interface IClient {
 	/**
 	 * Sends a GET request and returns a response.
 	 */
-	get(url: string, options?: RequestOptions): IResponse;
+	get(url: string, options?: RequestOptions): Promise<IResponse>;
 
 	/**
 	 * Sends a POST request and returns a response.
 	 */
-	post(url: string, options?: RequestOptions): IResponse;
+	post(url: string, options?: RequestOptions): Promise<IResponse>;
 
 	/**
 	 * Sends a PUT request and returns a response.
 	 */
-	put(url: string, options?: RequestOptions): IResponse;
+	put(url: string, options?: RequestOptions): Promise<IResponse>;
 
 	/**
 	 * Sends a PATCH request and returns a response.
 	 */
-	patch(url: string, options?: RequestOptions): IResponse;
+	patch(url: string, options?: RequestOptions): Promise<IResponse>;
 
 	/**
 	 * Sends a HEAD request and returns a response.
 	 */
-	head(url: string, options?: RequestOptions): IResponse;
+	head(url: string, options?: RequestOptions): Promise<IResponse>;
 
 	/**
 	 * Sends a DELETE request and returns a response.
 	 */
-	delete(url: string, options?: RequestOptions): IResponse;
+	delete(url: string, options?: RequestOptions): Promise<IResponse>;
 
 	/**
 	 * Sends a request and returns a response.
 	 */
-	sendRequest(request: IRequest): IResponse;
+	sendRequest(request: IRequest): Promise<IResponse>;
 }
