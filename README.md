@@ -6,7 +6,7 @@
 [![Node Engine](https://badgen.now.sh/npm/node/@httpack/httpack)](https://www.npmjs.com/package/@httpack/httpack)
 [![Build Status](https://badgen.now.sh/circleci/github/@httpack/httpack)](https://circleci.com/gh/@httpack/httpack)
 [![Codecov](https://badgen.now.sh/codecov/c/github/@httpack/httpack)](https://codecov.io/gh/@httpack/httpack)
-[![License: MPL-2.0](https://badgen.now.sh/badge/license/MPL-2.0/green)](https://mozilla.org/MPL/2.0/)
+[![License: MPL-2.0](https://badgen.now.sh/badge/license/MPL-2.0/green)](https://mozilla.org/MPL/2.0/) [![Greenkeeper badge](https://badges.greenkeeper.io/httpack/httpack.svg)](https://greenkeeper.io/)
 
 ## Installation
 
