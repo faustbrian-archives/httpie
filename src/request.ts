@@ -1,4 +1,5 @@
 import { URL } from "url";
+
 import { RequestOptions } from "./types";
 
 export interface IRequest {
